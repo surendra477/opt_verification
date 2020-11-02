@@ -4,7 +4,7 @@ const App = () => {
     const handleClick = () => {
         let recaptcha = new firebase.auth.RecaptchaVerifier('recaptcha-container')
 
-        let number = "+917977318133";
+        let number = "+91++++++++++";
         firebase.auth().signInWithPhoneNumber(number,recaptcha).then(function(e) {
             let code = prompt("enter otp")
             if(code == null) return;
